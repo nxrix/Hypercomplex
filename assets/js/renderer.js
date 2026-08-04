@@ -3,6 +3,8 @@ import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import { tables } from "./tables.js";
 import { shaderRaw } from "./shader.js";
 
+const content = document.body.querySelector("main");
+
 const getMul = (state) => {
   const a = tables[state.n];
   const comps = ["x","y","z","w"];
